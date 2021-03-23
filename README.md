@@ -1,9 +1,27 @@
 # 基本的 SQL 指令
 
-###登入 mysql
+## 登入 mysql
 
 ```bash
 mysql -u root -p
+```
+
+## 秀出資料庫
+
+```bash
+SHOW DATABASES;
+```
+
+## 建立新的資料庫
+
+```bash
+CREATE DATABASE [mysqldb name];
+```
+
+## 使用該資料庫
+
+```bash
+USE website;
 ```
 
 1. SHOW DATABASES;

@@ -1,6 +1,6 @@
 # 基本的 SQL 指令
 
-##登入 mysql
+###登入 mysql
 
 ```bash
 mysql -u root -p

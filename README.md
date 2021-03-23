@@ -83,6 +83,12 @@ UPDATE user
 
 <img src="img/11.png" alt=""/>
 
+## ● 使用 DELETE 指令刪除所有在 user 資料表中的資料。
+
+```bash
+DELETE from user;
+```
+
 # 基本的 SQL 指令
 
 ## 登入 mysql

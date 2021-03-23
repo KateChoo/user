@@ -28,7 +28,7 @@ Query OK, 1 row affected (0.01 sec)
 ## ● 使用 SELECT 指令取得所有在 user 資料表中的使用者資料。
 
 ```bash
-SELECT * FROM user;
+SELECT username FROM user;
 ```
 
    <img src="img/6.png" alt=""/>
@@ -74,7 +74,7 @@ SELECT * FROM user WHERE username = 'ply' AND password = 'ply';
 ## ● 使用 UPDATE 指令更新欄位 username 是 ply 的使用者資料，將資料中的 name 欄位改成【丁滿】。
 
 ```bash
-UPDATE test
+UPDATE user
 -> SET name = '丁滿'
 -> WHERE username = 'ply';
 ```

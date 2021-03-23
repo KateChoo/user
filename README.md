@@ -7,7 +7,7 @@ mysql> INSERT INTO user (`name`, `username`, `password`)
 -> VALUES ('Yo', 'ply', 'ply');
 ```
 
-圖片是後來加的,不是剛建立時照的
+這張圖片是後來加的,不是剛建立時照的
 <img src="img/5.png" alt=""/>
 
 ## 接著繼續新增至少 4 筆隨意的資料。
@@ -57,7 +57,7 @@ SELECT username FROM user ORDER BY time DESC;
 ## ● 使用 SELECT 指令取得 user 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序
 
 ```bash
-SELECT * FROM user WHERE id BETWEEN 2 AND 4 ORDER BY time DESC;
+SELECT * FROM user ORDER BY time DESC LIMIT  2,3;
 ```
 
    <img src="img/9.png" alt=""/>
@@ -168,3 +168,11 @@ DROP TABLE tablename
 ```bash
 DROP DATABASE databasename
 ```
+
+不錯的網站
+https://www.makeareadme.com/
+
+https://hevodata.com/learn/mysql-export-database-command-line/#m2s2
+
+https://gist.github.com/KateChoo/e31a048727fa337924513f199eb1626b
+https://gist.github.com/KateChoo/e31a048727fa337924513f199eb1626b

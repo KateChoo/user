@@ -1,6 +1,29 @@
 ## 使用 INSERT 指令新增一筆資料到 user 資料表中，這筆資料的 username 和 password 欄位必須是 ply。接著繼續新增至少 4 筆隨意的資料。
 
+```bash
+mysql> INSERT INTO user (`name`, `username`, `password`)
+-> VALUES ('Yo', 'ply', 'ply');
+```
+
    <img src="img/5.png" alt=""/>
+
+```bash
+mysql> INSERT INTO user (`name`, `username`, `password`)
+    -> VALUES ('x1', '1', '1');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO user (`name`, `username`, `password`)
+    -> VALUES ('x2', '2', '2');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO user (`name`, `username`, `password`)
+    -> VALUES ('x3', '3', '3');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO user (`name`, `username`, `password`)
+    -> VALUES ('x4', '4', '4');
+Query OK, 1 row affected (0.01 sec)
+```
 
 ## 使用 SELECT 指令取得所有在 user 資料表中的使用者資料。
 
@@ -35,12 +58,18 @@ SELECT * FROM user WHERE id BETWEEN 2 AND 4 ORDER BY time DESC;
    <img src="img/9.png" alt=""/>
    
  ## 使用 SELECT 指令取得欄位 username 是 ply 的使用者資料。
+ 
  ```bash
- SELECT * FROM user WHERE username = 'ply' AND password = 'ply';
+ SELECT * FROM user WHERE username = 'ply';
  ```
-<img src="img/10.png" alt=""/>
 
 ## 使用 SELECT 指令取得欄位 username 是 ply、且欄位 password 也是 ply 的資料。
+
+```bash
+SELECT * FROM user WHERE username = 'ply' AND password = 'ply';
+```
+
+<img src="img/10.png" alt=""/>
 
 ## 使用 UPDATE 指令更新欄位 username 是 ply 的使用者資料，將資料中的 name 欄位改成【丁滿】。
 

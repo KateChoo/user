@@ -202,10 +202,16 @@ DROP TABLE tablename
 DROP DATABASE databasename
 ```
 
-不錯的網站
+## mysqldump
+
+不要打分號
+
+```bash
+mysqldump -u root -p website > desktop/data.sql
+```
+
 https://www.makeareadme.com/
 
 https://hevodata.com/learn/mysql-export-database-command-line/#m2s2
 
-https://gist.github.com/KateChoo/e31a048727fa337924513f199eb1626b
 https://gist.github.com/KateChoo/e31a048727fa337924513f199eb1626b

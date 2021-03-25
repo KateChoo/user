@@ -92,6 +92,39 @@ UPDATE user
 DELETE from user;
 ```
 
+# 4. 結合資料表 SQL JOIN 的操作
+
+# 1. 在資料庫中，建立新資料表，取名字為 message。資料表中必須包含以下欄位設定:
+
+```bash
+mysql> CREATE TABLE message(
+    -> id BIGINT AUTO_INCREMENT,
+    -> user_id BIGINT NOT NULL,
+    -> content VARCHAR(255) NOT NULL,
+    -> time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    -> PRIMARY KEY(id),
+    -> FOREIGN KEY(user_id) REFERENCES user(id)
+    -> );
+```
+
+<img src="img/12.png" alt=""/>
+
+# ● 使用 SELECT 搭配 JOIN 的語法，取得所有留言，資料中須包含留言會員的姓名。
+
+```bash
+SELECT name, content FROM user JOIN message ON user.id = message.user_id;
+```
+
+<img src="img/13.png" alt=""/>
+
+# ● 使用 SELECT 搭配 JOIN 的語法，取得 user 資料表中欄位 username 是 ply 的所有留言，資料中須包含留言會員的姓名。
+
+```bash
+SELECT name, content FROM user JOIN message ON user.id = message.user_id WHERE username = 'ply';
+```
+
+<img src="img/14.png" alt=""/>
+
 # 其他
 
 ## 登入 mysql

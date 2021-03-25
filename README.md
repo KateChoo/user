@@ -130,6 +130,7 @@ SELECT name, content FROM user JOIN message ON user.id = message.user_id WHERE u
 ## 登入 mysql
 
 ```bash
+export PATH=${PATH}:/usr/local/mysql/bin/
 mysql -u root -p
 ```
 

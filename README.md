@@ -205,6 +205,8 @@ DROP DATABASE databasename
 
 ## mysqldump
 
+要先登出
+exit
 不要打分號
 
 ```bash

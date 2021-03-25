@@ -57,7 +57,7 @@ SELECT username FROM user ORDER BY time DESC;
 ## ● 使用 SELECT 指令取得 user 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序
 
 ```bash
-SELECT * FROM user ORDER BY time DESC LIMIT  2,3;
+SELECT * FROM user ORDER BY time DESC LIMIT  1,3;
 ```
 
    <img src="img/9.png" alt=""/>
